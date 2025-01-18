@@ -26,6 +26,10 @@ void shell(char user[]) {
         } else if (strcasecmp(command, "exit") == 0) {
             printf("Exiting...");
             break;
+        } else if (strcasecmp(command, "help") == 0) {
+            printf(
+                "Available commands:\n1. exit\n2. help\n3. hi"
+            );
         } else {
             printf(
                 "error: command '%s' is not found!\n",
