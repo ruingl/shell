@@ -27,9 +27,11 @@ void shell(char user[]) {
             printf("Exiting...");
             break;
         } else if (strcasecmp(command, "help") == 0) {
-            printf(
-                "Available commands:\n1. exit\n2. help\n3. hi"
-            );
+            const char *message = "Available commands:\n\n"
+                                  "  1. exit\n"
+                                  "  2. help\n"
+                                  "  3. hi\n";
+            printf("%s", message);
         } else {
             printf(
                 "error: command '%s' is not found!\n",
